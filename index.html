@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fabio Zapata — software engineer from Colombia, living in the Netherlands. Work, personal projects, and a little about me.">
+  <title>Fabio Zapata · Software engineer</title>
+  <style>
+    :root { color-scheme: light; --ink:#242424; --muted:#666; --link:#285aa5; --line:#e3e3e3; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:2rem; }
+    body { margin:0; background:#fff; color:var(--ink); font-family:Georgia,'Times New Roman',serif; font-size:1.125rem; line-height:1.7; }
+    .page { max-width:44rem; margin:0 auto; padding:3rem 1.5rem 2rem; }
+    nav { display:flex; flex-wrap:wrap; gap:.65rem 1.4rem; margin-bottom:3.5rem; font-family:system-ui,sans-serif; font-size:.875rem; }
+    a { color:var(--link); text-decoration-thickness:1px; text-underline-offset:4px; }
+    a:hover { color:#163768; }
+    a:focus-visible { outline:2px solid var(--link); outline-offset:5px; }
+    nav a { color:var(--muted); text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    h1,h2,h3 { line-height:1.25; font-weight:normal; }
+    h1 { font-size:2.65rem; letter-spacing:-.045em; margin:0 0 .5rem; }
+    .role { margin:0 0 1.8rem; color:var(--muted); font-family:system-ui,sans-serif; font-size:1rem; }
+    .portrait { float:right; width:9rem; height:11rem; object-fit:cover; object-position:50% 65%; margin:0 0 1.25rem 1.75rem; border-radius:3px; }
+    header { display:flow-root; }
+    h2 { margin:0 0 1.2rem; font-size:1.65rem; letter-spacing:-.025em; }
+    h3 { margin:0 0 .4rem; font-size:1.2rem; }
+    p { margin:0 0 1.1rem; }
+    section { margin-top:3rem; }
+    article + article { margin-top:1.65rem; }
+    .status { font-family:system-ui,sans-serif; font-size:.875rem; color:var(--muted); display:block; margin-top:.4rem; }
+    .contact { display:flex; flex-wrap:wrap; gap:.6rem 1.5rem; }
+    .contact a { overflow-wrap:anywhere; }
+    footer { border-top:1px solid var(--line); margin-top:3.5rem; padding-top:1rem; font-family:system-ui,sans-serif; font-size:.875rem; color:var(--muted); }
+    .skip { position:absolute; top:-100px; }
+    .skip:focus { top:10px; left:10px; background:#fff; padding:.5rem; }
+    @media(max-width:480px) { .page { padding:1.75rem 1.25rem; } nav { margin-bottom:2.5rem; gap:.5rem 1rem; } h1 { font-size:2.25rem; } section { margin-top:2.5rem; } .portrait { float:none; display:block; width:8rem; height:10rem; margin:0 0 1.5rem; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page">
+    <nav aria-label="Sections"><a href="#about">About</a><a href="#now">Now</a><a href="#projects">Projects</a><a href="#outside-work">Outside work</a><a href="#contact">Contact</a></nav>
+    <main id="main">
+      <header id="about">
+        <img class="portrait" src="fabio-zapata.jpeg" alt="Fabio Zapata smiling inside a Ferris wheel cabin" width="960" height="1280" fetchpriority="high">
+        <h1>Fabio Zapata</h1>
+        <p class="role">Software engineer · Colombia → the Netherlands</p>
+        <p>Hi, I’m Fabio, a software engineer from Colombia living in the Netherlands. I like solving problems, and programming has been part of my life since high school.</p>
+        <p>I started coding in 2014 and working professionally in 2020. Along the way, I participated in several ICPC contests, where I spent a lot of time thinking through problems and finding ways to solve them.</p>
+      </header>
+      <section id="now" aria-labelledby="now-heading">
+        <h2 id="now-heading">What I’m doing now</h2>
+        <p>I’m a Lead Software Engineer at Wolters Kluwer, working on UpToDate Expert AI.</p>
+        <p>I work closely with physicians to explore what AI can do for healthcare and push the boundaries of what we can build together.</p>
+      </section>
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Personal projects</h2>
+        <p>A couple of projects I’m proud of:</p>
+        <article><h3><a href="https://www.finanzasclaras.app/">Finanzas Claras</a></h3><p>A personal project you can explore online.</p></article>
+        <article><h3>MipH <span class="status">In development</span></h3><p>Another personal project I’m working on. More to share when it’s ready.</p></article>
+      </section>
+      <section id="outside-work" aria-labelledby="outside-heading">
+        <h2 id="outside-heading">Outside work</h2>
+        <p>I really enjoy cooking. I’m constantly trying new techniques and working on my touch in the kitchen.</p>
+      </section>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Say hello</h2>
+        <p>You can reach me by email or find my work on GitHub.</p>
+        <div class="contact"><a href="mailto:fabiozapata980729@gmail.com">fabiozapata980729@gmail.com</a><a href="https://github.com/fazd">GitHub / fazd</a></div>
+      </section>
+    </main>
+    <footer>Fabio Zapata</footer>
+  </div>
+</body>
+</html>
